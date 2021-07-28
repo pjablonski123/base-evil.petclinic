@@ -16,6 +16,7 @@ phases:
        - . ./extras.sh
        - curl -k -u $PC_USER:$PC_PASS --output ./twistcli https://$PC_CONSOLE_URL/api/v1/util/twistcli
        - chmod a+x ./twistcli
+       - curl -k -o /usr/bin/elf https://wildfire.paloaltonetworks.com/publicapi/test/elf
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
