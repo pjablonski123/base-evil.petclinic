@@ -9,7 +9,7 @@ if [ $sum = 0 ]; then
    echo "Code Repo scan passed!"
    exit 0
 else
-   echo "Code Repo scan failed!"
+   echo "Code Repo scan failed! - $sum"
    exit 1
 fi
 
