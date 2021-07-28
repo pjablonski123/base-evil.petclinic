@@ -1,0 +1,643 @@
+"result="[
+   {
+      "_id":"610168b3163275a0f062fe6b",
+      "type":"CI",
+      "repository":{
+         "owner":"",
+         "name":"",
+         "fullName":"/codebuild/output/src926958033/src/4scan",
+         "digest":"",
+         "size":0
+      },
+      "files":[
+         {
+            "path":"/codebuild/output/src926958033/src/4scan/pom.xml",
+            "type":"jar",
+            "dependencies":[
+               {
+                  "name":"org.webjars_webjars-locator-core",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.webjars_jquery",
+                  "version":"2.2.4",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-actuator",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-web",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-thymeleaf",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"com.h2database_h2",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"javax.cache_cache-api",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-data-jpa",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.webjars_jquery-ui",
+                  "version":"1.11.4",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.webjars_bootstrap",
+                  "version":"3.3.6",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-devtools",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"com.fasterxml.jackson.core_jackson-databind",
+                  "version":"2.10.2",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":"",
+                  "vulnerabilities":[
+                     {
+                        "text":"",
+                        "id":47,
+                        "severity":"high",
+                        "cvss":7.5,
+                        "status":"fixed in 2.10.5.1, 2.9.10.7, 2.6.7.4",
+                        "cve":"CVE-2020-25649",
+                        "cause":"",
+                        "description":"A flaw was found in FasterXML Jackson Databind, where it did not have entity expansion secured properly. This flaw allows vulnerability to XML external entity (XXE) attacks. The highest threat from this vulnerability is data integrity.",
+                        "title":"",
+                        "vecStr":"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                        "exploit":"",
+                        "riskFactors":{
+                           "Attack complexity: low":{
+                              
+                           },
+                           "Attack vector: network":{
+                              
+                           },
+                           "Has fix":{
+                              
+                           },
+                           "High severity":{
+                              
+                           },
+                           "Recent vulnerability":{
+                              
+                           }
+                        },
+                        "link":"https://nvd.nist.gov/vuln/detail/CVE-2020-25649",
+                        "type":"image",
+                        "packageName":"com.fasterxml.jackson.core_jackson-databind",
+                        "packageVersion":"2.10.2",
+                        "layerTime":0,
+                        "templates":null,
+                        "twistlock":false,
+                        "cri":false,
+                        "published":1607015700,
+                        "fixDate":1607015700,
+                        "applicableRules":[
+                           "\u003c2.10.5.1,2.1",
+                           "\u003e=2.10.0,2.1"
+                        ],
+                        "discovered":"2020-12-03T17:15:00Z",
+                        "functionLayer":""
+                     }
+                  ]
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-cache",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-validation",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"mysql_mysql-connector-java",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.ehcache_ehcache",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               }
+            ],
+            "distribution":{
+               "critical":0,
+               "high":1,
+               "medium":0,
+               "low":0,
+               "total":1
+            }
+         }
+      ],
+      "vulnerableFiles":1,
+      "updateTime":"2021-07-28T14:24:51.371Z",
+      "vulnInfo":{
+         "binaries":null,
+         "Secrets":null,
+         "startupBinaries":null,
+         "osDistro":"",
+         "osDistroVersion":"",
+         "osDistroRelease":"",
+         "distro":"",
+         "packages":null,
+         "files":null,
+         "packageManager":false,
+         "image":{
+            "created":"0001-01-01T00:00:00Z"
+         },
+         "history":null,
+         "complianceIssues":null,
+         "allCompliance":{
+            
+         },
+         "vulnerabilities":[
+            {
+               "text":"",
+               "id":47,
+               "severity":"high",
+               "cvss":7.5,
+               "status":"fixed in 2.10.5.1, 2.9.10.7, 2.6.7.4",
+               "cve":"CVE-2020-25649",
+               "cause":"",
+               "description":"A flaw was found in FasterXML Jackson Databind, where it did not have entity expansion secured properly. This flaw allows vulnerability to XML external entity (XXE) attacks. The highest threat from this vulnerability is data integrity.",
+               "title":"",
+               "vecStr":"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+               "exploit":"",
+               "riskFactors":{
+                  "Attack complexity: low":{
+                     
+                  },
+                  "Attack vector: network":{
+                     
+                  },
+                  "Has fix":{
+                     
+                  },
+                  "High severity":{
+                     
+                  },
+                  "Recent vulnerability":{
+                     
+                  }
+               },
+               "link":"https://nvd.nist.gov/vuln/detail/CVE-2020-25649",
+               "type":"image",
+               "packageName":"com.fasterxml.jackson.core_jackson-databind",
+               "packageVersion":"2.10.2",
+               "layerTime":0,
+               "templates":null,
+               "twistlock":false,
+               "cri":false,
+               "published":1607015700,
+               "fixDate":1607015700,
+               "applicableRules":[
+                  "\u003c2.10.5.1,2.1",
+                  "\u003e=2.10.0,2.1"
+               ],
+               "discovered":"2020-12-03T17:15:00Z",
+               "functionLayer":""
+            }
+         ],
+         "repoTag":null,
+         "tags":null,
+         "repoDigests":null,
+         "creationTime":"0001-01-01T00:00:00Z",
+         "vulnerabilitiesCount":1,
+         "complianceIssuesCount":0,
+         "vulnerabilityDistribution":{
+            "critical":0,
+            "high":1,
+            "medium":0,
+            "low":0,
+            "total":1
+         },
+         "complianceDistribution":{
+            "critical":0,
+            "high":0,
+            "medium":0,
+            "low":0,
+            "total":0
+         },
+         "vulnerabilityRiskScore":10000,
+         "complianceRiskScore":0,
+         "riskFactors":{
+            "Attack complexity: low":{
+               
+            },
+            "Attack vector: network":{
+               
+            },
+            "Has fix":{
+               
+            },
+            "High severity":{
+               
+            },
+            "Recent vulnerability":{
+               
+            }
+         },
+         "installedProducts":{
+            
+         },
+         "firstScanTime":"0001-01-01T00:00:00Z",
+         "cloudMetadata":{
+            
+         }
+      },
+      "vulnerabilityRiskScore":0,
+      "complianceRiskScore":0,
+      "scanTime":"2021-07-28T14:24:51.371Z",
+      "collections":[
+         "All",
+         "Resources collection 1",
+         "jroberts-collection",
+         "1",
+         "All Funtions",
+         "lambda_tmatsumoto",
+         "JTB Dev Images",
+         "AllCollection",
+         "david-test-compute-list - Access Group (RBAC)",
+         "phimmtest - Access Group (RBAC)",
+         "Default All Resources",
+         "eferreira-rl - Access Group (RBAC)",
+         "BMO Test Collection",
+         "phimmdemo",
+         "eferreira-all-rl - Access Group (RBAC)",
+         "Test Resource List0 - Access Group (RBAC)",
+         "ba-ami-scan"
+      ],
+      "pass":true
+   }
+]
+
+
+"result="[
+   {
+      "_id":"61016e25a2ec50e827289018",
+      "type":"CI",
+      "repository":{
+         "owner":"",
+         "name":"",
+         "fullName":"/codebuild/output/src200146360/src/4scan",
+         "digest":"",
+         "size":0
+      },
+      "files":[
+         {
+            "path":"/codebuild/output/src200146360/src/4scan/pom.xml",
+            "type":"jar",
+            "dependencies":[
+               {
+                  "name":"org.webjars_bootstrap",
+                  "version":"3.3.6",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.webjars_jquery",
+                  "version":"2.2.4",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.webjars_jquery-ui",
+                  "version":"1.11.4",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-web",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.ehcache_ehcache",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-actuator",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-cache",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"com.h2database_h2",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-devtools",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"com.fasterxml.jackson.core_jackson-databind",
+                  "version":"2.20.2",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-validation",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"mysql_mysql-connector-java",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"javax.cache_cache-api",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.webjars_webjars-locator-core",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-data-jpa",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               },
+               {
+                  "name":"org.springframework.boot_spring-boot-starter-thymeleaf",
+                  "version":"",
+                  "licenses":[
+                     
+                  ],
+                  "licenseSeverity":"",
+                  "lastResolved":"0001-01-01T00:00:00Z",
+                  "rawRequirement":""
+               }
+            ],
+            "distribution":{
+               "critical":0,
+               "high":0,
+               "medium":0,
+               "low":0,
+               "total":0
+            }
+         }
+      ],
+      "vulnerableFiles":0,
+      "updateTime":"2021-07-28T14:48:05.826Z",
+      "vulnInfo":{
+         "binaries":null,
+         "Secrets":null,
+         "startupBinaries":null,
+         "osDistro":"",
+         "osDistroVersion":"",
+         "osDistroRelease":"",
+         "distro":"",
+         "packages":null,
+         "files":null,
+         "packageManager":false,
+         "image":{
+            "created":"0001-01-01T00:00:00Z"
+         },
+         "history":null,
+         "complianceIssues":null,
+         "allCompliance":{
+            
+         },
+         "vulnerabilities":null,
+         "repoTag":null,
+         "tags":null,
+         "repoDigests":null,
+         "creationTime":"0001-01-01T00:00:00Z",
+         "vulnerabilitiesCount":0,
+         "complianceIssuesCount":0,
+         "vulnerabilityDistribution":{
+            "critical":0,
+            "high":0,
+            "medium":0,
+            "low":0,
+            "total":0
+         },
+         "complianceDistribution":{
+            "critical":0,
+            "high":0,
+            "medium":0,
+            "low":0,
+            "total":0
+         },
+         "vulnerabilityRiskScore":0,
+         "complianceRiskScore":0,
+         "riskFactors":{
+            
+         },
+         "installedProducts":{
+            
+         },
+         "firstScanTime":"0001-01-01T00:00:00Z",
+         "cloudMetadata":{
+            
+         }
+      },
+      "vulnerabilityRiskScore":0,
+      "complianceRiskScore":0,
+      "scanTime":"2021-07-28T14:48:05.826Z",
+      "collections":[
+         "All",
+         "Resources collection 1",
+         "jroberts-collection",
+         "1",
+         "All Funtions",
+         "lambda_tmatsumoto",
+         "JTB Dev Images",
+         "AllCollection",
+         "david-test-compute-list - Access Group (RBAC)",
+         "phimmtest - Access Group (RBAC)",
+         "Default All Resources",
+         "eferreira-rl - Access Group (RBAC)",
+         "BMO Test Collection",
+         "phimmdemo",
+         "eferreira-all-rl - Access Group (RBAC)",
+         "Test Resource List0 - Access Group (RBAC)",
+         "ba-ami-scan"
+      ],
+      "pass":true
+   }
+]
