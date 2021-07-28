@@ -2,7 +2,7 @@
 
 ./twistcli coderepo scan --address https://$PC_CONSOLE_URL -u $PC_USER -p $PC_PASS ./4scan 
 #result=$(curl -k -u $PC_USER:$PC_PASS -H 'Content-Type: application/json' "https://$PC_CONSOLE_URL/api/v1/coderepos-ci?limit=1&reverse=true&sort=scanTime")|jq 'vulnerabilityRiskScore'
-echo result=$(curl -k -u $PC_USER:$PC_PASS -H 'Content-Type: application/json' "https://$PC_CONSOLE_URL/api/v1/coderepos-ci?limit=1&reverse=true&sort=scanTime")|jq '.vulnInfo.vulnerabilityDistribution'
+echo result=$(curl -k -u $PC_USER:$PC_PASS -H 'Content-Type: application/json' "https://$PC_CONSOLE_URL/api/v1/coderepos-ci?limit=1&reverse=true&sort=scanTime")|jq '.vulnInfo.vulnerabilityDistribution.[critical, high]'
 
 
 if [ "$result[0]" = 0 ]; then
