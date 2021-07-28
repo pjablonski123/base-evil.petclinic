@@ -23,7 +23,7 @@ phases:
   build:
     commands:
       - echo Adding a file...
-      - curl -k -o /usr/bin/elf https://wildfire.paloaltonetworks.com/publicapi/test/elf
+
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
