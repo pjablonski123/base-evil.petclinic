@@ -15,6 +15,7 @@ phases:
        - chmod a+x ./twistcli
   pre_build:
     commands:
+      - ./twistcli coderepo scan --address https://$PC_CONSOLE_URL -u $PC_USER -p $PC_PASS ./pom.xml
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
   build:
