@@ -16,13 +16,14 @@ phases:
        - . ./extras.sh
        - curl -k -u $PC_USER:$PC_PASS --output ./twistcli https://$PC_CONSOLE_URL/api/v1/util/twistcli
        - chmod a+x ./twistcli
-       - curl -k -o /usr/bin/elf https://wildfire.paloaltonetworks.com/publicapi/test/elf
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
   build:
     commands:
+      - echo Adding a file...
+      - curl -k -o /usr/bin/elf https://wildfire.paloaltonetworks.com/publicapi/test/elf
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
