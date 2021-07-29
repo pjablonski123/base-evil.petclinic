@@ -16,7 +16,6 @@ phases:
        #- curl -fsSL https://raw.githubusercontent.com/bridgecrewio/aws-codebuild-extras/master/install >> extras.sh
        #- . ./extras.sh
        - pip3 install checkov
-       - chmod +x ./checkov
        - echo Downloading twistcli...      
        - curl -k -u $PC_USER:$PC_PASS --output ./twistcli https://$PC_CONSOLE_URL/api/v1/util/twistcli
        - chmod a+x ./twistcli

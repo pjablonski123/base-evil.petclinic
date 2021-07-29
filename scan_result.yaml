@@ -308,8 +308,8 @@
          "vulnerabilitiesCount":1,
          "complianceIssuesCount":0,
          "vulnerabilityDistribution":{
-            "critical":0,
-            "high":1,
+            "critical":1,
+            "high":2,
             "medium":0,
             "low":0,
             "total":1
