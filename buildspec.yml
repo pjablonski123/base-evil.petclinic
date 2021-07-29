@@ -11,23 +11,42 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
+       - echo Installing Checkov...
+       #- pip3 install bridgecrew
+       #- curl -fsSL https://raw.githubusercontent.com/bridgecrewio/aws-codebuild-extras/master/install >> extras.sh
+       #- . ./extras.sh
+       - pip3 install checkov
+       - chmod +x ./checkov
+       - echo Downloading twistcli...      
        - curl -k -u $PC_USER:$PC_PASS --output ./twistcli https://$PC_CONSOLE_URL/api/v1/util/twistcli
        - chmod a+x ./twistcli
   pre_build:
     commands:
+      - echo Code Repository Scan...     
       - chmod +x ./scanCodeRepo.sh
       - ./scanCodeRepo.sh
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
   build:
     commands:
+      #- bridgecrew -d . --bc-api-key $BC_API_KEY --repo-id $ACCOUNT_ID/$PROJECT --branch "master" -s
+      #- bridgecrew -d . -o junitxml > test_results.xml
+      - echo IAC Scanning...
+      - checkov -f cft.yaml --repo-id $GITHUB_ACCOUNT_ID/$GITHUB_PROJECT --branch main -o junitxml > test_results.xml
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
       - docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
   post_build:
     commands:
+      - echo Image Scan in terms of Vulnerabilities, Malware and Compliance...
       - ./twistcli images scan --address https://$PC_CONSOLE_URL --user $PC_USER --password $PC_PASS --details $IMAGE_REPO_NAME:$IMAGE_TAG
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
+reports:
+  bridgecrew-infrastructure-security:
+    files:
+       - test_results.xml
+    discard-paths: yes
+    file-format: JunitXml
