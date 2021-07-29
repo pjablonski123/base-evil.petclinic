@@ -31,7 +31,7 @@ phases:
       #- bridgecrew -d . --bc-api-key $BC_API_KEY --repo-id $ACCOUNT_ID/$PROJECT --branch "master" -s
       #- bridgecrew -d . -o junitxml > test_results.xml
       - echo IAC Scanning...
-      - checkov -f cft.yaml --repo-id $GITHUB_ACCOUNT_ID/$GITHUB_PROJECT --branch main -o junitxml > test_results.xml
+      - checkov -f cft.yaml --repo-id $GITHUB_ACCOUNT_ID/$GITHUB_PROJECT --branch main
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
@@ -43,9 +43,3 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
-reports:
-  bridgecrew-infrastructure-security:
-    files:
-       - test_results.xml
-    discard-paths: yes
-    file-format: JunitXml
