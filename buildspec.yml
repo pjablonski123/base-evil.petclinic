@@ -36,6 +36,8 @@ phases:
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
       - docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
+      - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $ECR_REPO_URI:$IMAGE_TAG > imagedefinitions.json
+      - cat imagedefinitions.jso
   post_build:
     commands:
       - echo Image Scan in terms of Vulnerabilities, Malware and Compliance...
@@ -45,3 +47,6 @@ phases:
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
 
       #--bc-api-key $BC_API_KEY --repo-id $GITHUB_ACCOUNT_ID/$GITHUB_PROJECT --branch main
+  artifacts:
+    files:
+      - imagedefinitions.jso
