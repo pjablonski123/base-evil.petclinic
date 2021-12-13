@@ -31,7 +31,7 @@ phases:
       #- bridgecrew -d . --bc-api-key $BC_API_KEY --repo-id $ACCOUNT_ID/$PROJECT --branch "master" -s
       #- bridgecrew -d . -o junitxml > test_results.xml
       - echo IAC Scanning...
-      #- checkov -f ec2.tf --bc-api-key $BC_KEY
+      - checkov -f ec2.tf --bc-api-key $BC_KEY
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
